@@ -1,4 +1,4 @@
-config_opts['root'] = 'fedora-extras-{{ releasever }}-{{ target_arch }}'
+config_opts['root'] = 'anda-{{ releasever }}-{{ target_arch }}'
 config_opts['dist'] = 'fc{{ releasever }}'  # only useful for --resultdir variable subst
 config_opts['macros']['%dist'] = '.fc{{ releasever }}'
 config_opts['chroot_setup_cmd'] = 'install @buildsys-build'
@@ -25,9 +25,9 @@ best=1
 module_platform_id=platform:fc{{ releasever }}
 protected_packages=
 
-[fedora-extras]
-name=fedora-extras
-baseurl=https://subatomic.fyralabs.com/fe$releasever/
+[andaman-common]
+name=andaman-common
+baseurl=https://subatomic.fyralabs.com/ad$releasever/
 type=rpm-md
 skip_if_unavailable=True
 gpgcheck=0
