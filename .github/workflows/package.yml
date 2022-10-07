@@ -12,6 +12,6 @@ jobs:
       subatomicRepo: ad37
       mockConfig: anda-37-x86_64
       mockConfigPackage: anda-mock-configs
-      upload: false
+      upload: true
     secrets:
       subatomicToken: ${{ secrets.SUBATOMIC_TOKEN }}
